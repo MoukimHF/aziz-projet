@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/x-icon" href="../resources/favicon-train.ico" />
+
+        <!--Fontawesome-->
+        <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css" />
+        <link rel="stylesheet" href="../fontawesome/css/fontawesome.min.css" />
+        
+        <!--Navigation bar and footer-->
+        <link rel="stylesheet" type="text/css" href="../Style/style-custom.css" />
+        <link rel="stylesheet" type="text/css" href="../Style/style-custom-nav.css" />
+
+        <!--style sheets for this page only-->
+<!--		<link rel = "stylesheet" href = "../style/style-season.css" >-->
+
+        <!--jquery-->
+        <script src="../Script/jquery-3.3.1.min.js"></script>
+        <!--jquery UI-->
+        <script src="../Script/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="../Style/jquery-ui.css" />
+
+	<!--mdb-->
+	<script src="../ExternalResources/MDB/js/popper.min.js"></script>
+	<link href="../ExternalResources/MDB/css/mdb.min.css" rel="stylesheet">
+
+
+	<!--Boostrap-->
+	<link href="../ExternalResources/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="../ExternalResources/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+
+
+        <!--Herder js file-->
+		<script src="../Script/Header.js"></script>
+
+	    
+		 <title>Season Form </title>  
+		 
+		 <script>
+			 $(function () {
+                        $("#Header").html(getHeaderLG());
+                        $("#footerID").html(getFooter());
+				});
+				
+				function alrt()
+				{
+					alert("your details entered successfully!!!");
+				}
+		 </script>
+
+<body>
+
+	<!--Navigation Bar -->
+	<div id="Header"></div>
+
+
+	
+
+<!--Footer -->
+<footer id="footerID"></footer>
+
+	<!--cannot read property 'addeventlistener' of null mdb
+    - This is probably because the script is executed before the page loads. By placing the script at the bottom of the page, I circumvented the problem.
+    -->
+	<script src="../ExternalResources/MDB/js/mdb.min.js"></script>
+			
+		
+</body>
+
+</html>
+
+                         
