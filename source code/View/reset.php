@@ -153,7 +153,7 @@ catch(Exception $e) {
 
         </script>
 
-        <title>BOOkit-Reset Password</title>
+        <title>BOOKTn-Reset Password</title>
 </head>
 
 <body>

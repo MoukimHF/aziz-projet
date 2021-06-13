@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'user' => 'your email',
-    'pass' => 'put your password'
+    'user' => 'moukim1@yahoo.com',
+    'pass' => '123456'
 ];
 
 ?>

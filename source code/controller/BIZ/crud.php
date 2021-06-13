@@ -63,7 +63,7 @@ class crud
 
         $sql_query = "CALL SP_CHECK_USER_LOGIN('". mysqli_real_escape_string( $conn ,$email) ."','". mysqli_real_escape_string( $conn ,$password) ."')";
 
-        $result = mysqli_query($conn, $sql_query) or die("Query fail: " . mysqli_error());
+        $result = mysqli_query($conn, $sql_query) or die("Query fail: " . mysqli_error($conn));
 
         // Associative array
         $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
@@ -248,6 +248,7 @@ class crud
 
     function getAllStations(){
         global $conn;
+            // ChromePhp::log("l3asbaaaaaaaa");
 
         $sql_query = "SELECT StationID,Description,DescriptionLong,DistanceFromMainStation, CONCAT(DistanceFromMainStation, ' KM') as DistanceFromMainStationKM,isActive, case when isActive = '1' then 'YES' else 'NO' end as Active FROM station;";
 

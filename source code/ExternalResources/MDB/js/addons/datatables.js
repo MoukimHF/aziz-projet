@@ -6487,7 +6487,7 @@
 			}
 	
 			if ( type == 'alert' ) {
-				alert( msg );
+				console.log( msg );
 			}
 			else if ( type == 'throw' ) {
 				throw new Error(msg);

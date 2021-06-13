@@ -93,7 +93,7 @@
             $objMailContent->setReceverName($ReceverName);
             $objMailContent->setSiteURL($configs['sitehomepage']);
             $objMailContent->setRedirectURL($configs['siteurl'].'login.php?varificationMail='.$ReceverAddress);
-            $objMailContent->setSubject("BOOKit User Account Verification");
+            $objMailContent->setSubject("BOOKtn User Account Verification");
 
 
 
@@ -236,7 +236,7 @@
             $objMailContent->setReceverName($ReceverName);
             $objMailContent->setSiteURL($configs['sitehomepage']);
             $objMailContent->setRedirectURL($configs['siteurl'].'reset.php?token='.$tokenNo);
-            $objMailContent->setSubject("BOOKit User Account Password Reset");
+            $objMailContent->setSubject("BOOKTn User Account Password Reset");
 
 
 
@@ -312,7 +312,9 @@
 
         //to Json
         $jsonResult = json_encode($result, JSON_PRETTY_PRINT);
-
+//         $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+// fwrite($myfile, $jsonResult);
+// fclose($myfile);
         echo $jsonResult;
     }
 
@@ -490,11 +492,13 @@
         $obj = json_decode($objParams);
 
         $objCRUD = new crud();  // crud operation object
-
+        
         $result = $objCRUD->getTrainDetails($obj->From, $obj->To);
-
+        
         $jsonResult = json_encode($result, JSON_PRETTY_PRINT);
-
+        $myfile = fopen("trains.txt", "w") or die("Unable to open file!");
+fwrite($myfile, $jsonResult);
+fclose($myfile);
         echo $jsonResult;
     }
 

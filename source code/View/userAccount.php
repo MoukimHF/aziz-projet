@@ -75,7 +75,7 @@ if(session_status() != PHP_SESSION_NONE){
 		 <script src="../Script/Header.js"></script>
 
 
-		<title> BOOKit-User Account </title>
+		<title> BOOKTn-User Account </title>
 
 
 		<script>

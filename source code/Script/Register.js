@@ -183,11 +183,11 @@ function checkPhone(type) {
     var valied = false;
     var isNumric = false;
     if(type == 'F'){
-        if($('#txtPhone_F').val().length == 10){
+        if($('#txtPhone_F').val().length == 8){
             valied = true;
         }else{
             $('#txtPhone_F').addClass('required');
-            toastr.warning('phone number must be 10 digits !');
+            toastr.warning('phone number must be 8 digits !');
             valied = false;
         }
 
@@ -200,11 +200,11 @@ function checkPhone(type) {
         }
 
     }else{
-        if($('#txtPhone_P').val().length == 10){
+        if($('#txtPhone_P').val().length == 8){
             valied = true;
         }else{
             $('#txtPhone_P').addClass('required');
-            toastr.warning('phone number must be 10 digits !');
+            toastr.warning('phone number must be 8 digits !');
             valied = false;
         }
 

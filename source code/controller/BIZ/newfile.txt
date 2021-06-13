@@ -1,0 +1,47 @@
+[
+    {
+        "StationID": "1",
+        "Description": "Colombo Fort",
+        "DescriptionLong": "Colombo Fort",
+        "DistanceFromMainStation": "0.00",
+        "DistanceFromMainStationKM": "0.00 KM",
+        "isActive": "1",
+        "Active": "YES"
+    },
+    {
+        "StationID": "2",
+        "Description": "MATARA",
+        "DescriptionLong": "MATARA",
+        "DistanceFromMainStation": "344.00",
+        "DistanceFromMainStationKM": "344.00 KM",
+        "isActive": "1",
+        "Active": "YES"
+    },
+    {
+        "StationID": "3",
+        "Description": "RAGAMA",
+        "DescriptionLong": "ragama",
+        "DistanceFromMainStation": "150.00",
+        "DistanceFromMainStationKM": "150.00 KM",
+        "isActive": "1",
+        "Active": "YES"
+    },
+    {
+        "StationID": "4",
+        "Description": "GAMPAHA",
+        "DescriptionLong": "GAMAPAHA",
+        "DistanceFromMainStation": "200.00",
+        "DistanceFromMainStationKM": "200.00 KM",
+        "isActive": "1",
+        "Active": "YES"
+    },
+    {
+        "StationID": "5",
+        "Description": "MIRIGAMA",
+        "DescriptionLong": "mirigama",
+        "DistanceFromMainStation": "250.00",
+        "DistanceFromMainStationKM": "250.00 KM",
+        "isActive": "1",
+        "Active": "YES"
+    }
+]

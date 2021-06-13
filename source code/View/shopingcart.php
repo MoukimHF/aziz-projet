@@ -12,7 +12,7 @@ include "sessionWorker.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="../resources/favicon-train.ico" />
-    <title>BOOkit-Shopping Cart</title>
+    <title>BOOKTn-Shopping Cart</title>
 
     <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
     <link rel="stylesheet" href="../fontawesome/css/fontawesome.min.css">

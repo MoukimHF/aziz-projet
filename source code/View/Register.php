@@ -14,7 +14,7 @@ include "sessionWorker.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="../resources/favicon-train.ico" />
 
-    <title>BOOkit-Register</title>
+    <title>BOOKTn-Register</title>
 
     <!--Fontawesome-->
     <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css" />
@@ -241,7 +241,7 @@ include "sessionWorker.php";
                                         <input id="txtEmail_F" type="email" class="form-control" placeholder="Email *"
                                                value="" />
                                         <span class="warning-red-message invalied-mail" id="spnInvalied_F" style="display: none">Invalied Email Address.</span>
-                                        <span class="warning-red-message duplicate-mail" id="spnDuplicate_F" style="display: none">This email address is already connected with BOOKit.</span>
+                                        <span class="warning-red-message duplicate-mail" id="spnDuplicate_F" style="display: none">This email address is already connected with BOOKTn.</span>
                                     </div>
 
 
@@ -306,7 +306,7 @@ include "sessionWorker.php";
                                         <input id="txtEmail_P" type="email" class="form-control" placeholder="Email *"
                                                value="" />
                                         <span class="warning-red-message invalied-mail" id="spnInvalied_P" style="display: none">Invalied Email Address.</span>
-                                        <span class="warning-red-message duplicate-mail" id="spnDuplicate_P" style="display: none">This email address is already connected with BOOKit.</span>
+                                        <span class="warning-red-message duplicate-mail" id="spnDuplicate_P" style="display: none">This email address is already connected with BOOKTn.</span>
                                     </div>
 
 

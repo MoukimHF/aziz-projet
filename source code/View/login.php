@@ -10,7 +10,7 @@ include "sessionWorker.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="../resources/favicon-train.ico" />
-    <title>BOOkit-Home</title>
+    <title>BOOKTn-Home</title>
 
     <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
     <link rel="stylesheet" href="../fontawesome/css/fontawesome.min.css">
@@ -159,7 +159,7 @@ include "sessionWorker.php";
         function displayVerificationMessage(email) {
             $.confirm({
                 title: 'Congratulations!',
-                content: 'Your BOOKit account is Verified.\nYou are now a verified Bookit user('+email+'). You can now book unlimited Train Tickets with Bookit account.Also you ' +
+                content: 'Your BOOKTn account is Verified.\nYou are now a verified BOOKTn user('+email+'). You can now book unlimited Train Tickets with BOOKTn account.Also you ' +
                     'eligible for our mass discount offers.stay tuned with us.\n',
                 type: 'blue',
                 columnClass: 'medium',

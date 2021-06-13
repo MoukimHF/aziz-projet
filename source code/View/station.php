@@ -15,10 +15,10 @@ include "sessionWorker.php";
     <!--make the webpage responsive, relative to resolution -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--linking the BOOKit train icon on top of the page -->
+    <!--linking the BOOKTn train icon on top of the page -->
     <link rel="shortcut icon" type="image/x-icon" href="../resources/favicon-train.ico" />
 
-    <title>BOOkit-Stations</title>
+    <title>BOOKTn-Stations</title>
 
     <!--fontawesome icon using (css files) -->
     <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css" />
@@ -63,10 +63,10 @@ include "sessionWorker.php";
             table = $('#main0').DataTable({
                 "ajax": {
                     "type": "GET",
-                    "url": "../Controller/BIZ/logic.php",
+                    "url": "../controller/BIZ/logic.php",
                     "contentType": "application/json; charset=utf-8",
                     "dataType": "json",
-                    data: { "stationMainTable": "test"},
+                    data: { "getAllStations": "test"},
                     "beforeSend": function (request) {
                         //$('#loader').show();
                     },
@@ -89,10 +89,10 @@ include "sessionWorker.php";
                 pageLength: 10,
                 "order": [[0, "asc"]],
                 columns: [
-                    { 'data': 'TrainName'},
-                    { 'data': 'TrainCode' },
-                    { 'data': 'StationName' },
-                    { 'data': 'FromTime' },
+                    { 'data': 'Description'},
+                    { 'data': 'DescriptionLong' },
+                    { 'data': 'DistanceFromMainStation' },
+                    { 'data': 'DistanceFromMainStationKM' },
                 ],
 
                 dom: 'lrtip',
@@ -112,8 +112,6 @@ include "sessionWorker.php";
     <!--Page Content -->
     <div style="height:100%">
     
-        <input type="text" placeholder="Search here...." id="search-bar1" name="search-bar1">
-        <br/><br/>
         <h1 id="h1-cus">Five Trains Run Via Colombo Fort Station</h1>
         <br/><br/><br/>
 
@@ -121,10 +119,10 @@ include "sessionWorker.php";
             <table class="table" id="main0">
                 <thead class="black white-text">
                       <tr>
-                        <th scope="col">Train Name</th>
-                        <th scope="col">Code</th>
-                        <th scope="col">Station Name</th>
-                        <th scope="col">Arrives</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Long description</th>
+                        <th scope="col">Distance From Main Station</th>
+                        <th scope="col">Distance From Main Station KM</th>
 
                         
 

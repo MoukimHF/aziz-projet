@@ -14,7 +14,7 @@ include "sessionWorker.php";
     <!--make the webpage responsive, relative to resolution -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="../resources/favicon-train.ico" />
-    <title>BOOkit-Contact Us</title>
+    <title>BOOKTn-Contact Us</title>
 
     <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css" />
     <link rel="stylesheet" href="../fontawesome/css/fontawesome.min.css" />

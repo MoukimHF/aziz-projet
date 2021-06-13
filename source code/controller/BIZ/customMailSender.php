@@ -21,7 +21,7 @@ class customMailSender
         $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 587;                                    // TCP port to connect to
 
-        $mail->setFrom($credential['user'], 'BOOKit');
+        $mail->setFrom($credential['user'], 'BOOKTn');
         $mail->addAddress($objMailContent->getReceverAddress());             // Name is optional
 
         $mail->addReplyTo($credential['user'], 'Information');

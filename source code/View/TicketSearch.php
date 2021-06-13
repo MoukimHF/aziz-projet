@@ -34,8 +34,8 @@ include "sessionWorker.php";
 
 
         <!--Boostrap-->
-        <link href="../ExternalResources/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="../ExternalResources/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
         <!--jquery UI-->
         <script src="../Script/jquery-ui.min.js"></script>
@@ -92,9 +92,9 @@ include "sessionWorker.php";
 
                     //begin page functions
                     $.ajax({
-                        url: '../Controller/BIZ/logic.php',
+                        url: '../controller/BIZ/logic.php',
                         type: 'get',
-                        data: { "getAllStations": "test"},
+                        data: { "getAllStations": "true"},
                         success: function(response) {
                             var result = (JSON.stringify(response));
                             var objResult =  JSON.parse(result);
@@ -125,7 +125,10 @@ include "sessionWorker.php";
 
                             });
 
-                            $('.selectpicker').selectpicker();
+                            
+            setTimeout(() => {
+      jQuery('.selectpicker').selectpicker('refresh');
+    }, 500);
                             $('#txtDate').val(getUrlVars()["date"]);
                             getTrainDetails('0', '0');
                         }
@@ -136,12 +139,13 @@ include "sessionWorker.php";
                     $('#btnSearch').click(function () {
                         var FROM = $('#searchDDLFrom').val();
                         var TO = $('#searchDDLTo').val();
+                        console.log($('#txtDate').val())
 
                         if(FROM == '0' || TO == '0' || $('#txtDate').val() == ''){
+                                console.log($('#txtDate'))
                             toastr.warning('please fill all fields', 'warning');
                             return;
                         }
-                        console.log(FROM);
                         getTrainDetails(FROM, TO);
 
                     });
@@ -219,7 +223,10 @@ include "sessionWorker.php";
 
                         var From = getUrlVars()["from"];
                         var to = getUrlVars()["To"];
-
+                        console.log({DFrom})
+                        console.log({DTo})
+                        console.log({From})
+                        console.log({to})
                         if(DFrom != '0' && DTo != '0'){
                             From = DFrom;
                             to = DTo;

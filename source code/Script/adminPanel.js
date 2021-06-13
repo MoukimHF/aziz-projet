@@ -118,7 +118,7 @@ function LoadStationTable() {
     table = $('#tblStations').DataTable({
         "ajax": {
             "type": "GET",
-            "url": "../Controller/BIZ/logic.php",
+            "url": "../controller/BIZ/logic.php",
             "contentType": "application/json; charset=utf-8",
             "dataType": "json",
             data: { "getAllStations": "test"},
@@ -1123,7 +1123,7 @@ function ImplementNewTrain(jsonResult) {
 
             //fill dropdowns
             $.ajax({
-                url: '../Controller/BIZ/logic.php',
+                url: '../controller/BIZ/logic.php',
                 type: 'get',
                 data: { "getAllStations": "test"},
                 success: function(response) {
@@ -1576,7 +1576,7 @@ function UpdateTrain(jsonResult, trainID) {
 
             //fill dropdowns
             $.ajax({
-                url: '../Controller/BIZ/logic.php',
+                url: '../controller/BIZ/logic.php',
                 type: 'get',
                 data: { "getAllStations": "test"},
                 success: function(response) {
@@ -1672,7 +1672,7 @@ function shuduleNewRow(event){
 
 
     $.ajax({
-        url: '../Controller/BIZ/logic.php',
+        url: '../controller/BIZ/logic.php',
         type: 'get',
         data: { "getAllStations": "test"},
         success: function(response) {
@@ -1747,7 +1747,7 @@ function shuduleNewRow(event){
 function shuduleupdateRow(index,from,to,fromtime,totime){
 
     $.ajax({
-        url: '../Controller/BIZ/logic.php',
+        url: '../controller/BIZ/logic.php',
         type: 'get',
         data: { "getAllStations": "test"},
         success: function(response) {

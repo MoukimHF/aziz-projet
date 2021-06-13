@@ -17,7 +17,7 @@ margin: 0;
     margin-bottom: 0px;
 text-align: center;
 margin-bottom: 25px;
-padding-top: 25px;"> Welcome to the BOOKit! </h1>
+padding-top: 25px;"> Welcome to the BOOKTn! </h1>
 </div>
 <div style="width: 650px; margin: 0 auto; background: #003A99; border:0; -webkit-border-radius: 15px; border-radius: 15px; min-height: 100px; padding: 7px 0;margin-top: 30px; ">
 <div style="width: 630px; margin: 0 auto; background: #fff; border:1px solid #EAEAEA; -webkit-border-radius: 15px; border-radius: 15px; min-height: 100px; padding: 10px; ">
@@ -35,7 +35,7 @@ margin: 0;
 font-size: 16px;
 font-family: Arial, Helvetica, sans-serif;
 color: #777272;">Dr %s, <br><br>
-  To finish setting up this BOOKit account,we just nedd to make sure this email address is yours.</p>
+  To finish setting up this BOOKTn account,we just nedd to make sure this email address is yours.</p>
 <div style=" -webkit-border-radius: 5px 5px 5px 5px;
 border-radius: 5px 5px 5px 5px;
 background: #074B88 none repeat scroll 0 0;
@@ -84,7 +84,7 @@ font-size: 11px;
 color: #FFFFFF;
 font-family: Arial, Helvetica, sans-serif;">Copyright &copy; <a style="font-size: 11px;
 color: #B1B1B1;
-text-decoration: none;" href="%s" target="_blank">BOOKit</a> 2019. </div>
+text-decoration: none;" href="%s" target="_blank">BOOKTn</a> 2019. </div>
 
 </div>
 
